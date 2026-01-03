@@ -262,3 +262,26 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# ==============================================
+# Custom ignore patterns for Properties and ServiceDependencies
+# ==============================================
+
+# Properties folder (contains publish profiles and other generated files)
+**/Properties/
+**/PublishProfiles/
+
+# ServiceDependencies folder (Azure deployment configurations)
+**/ServiceDependencies/
+
+# Azure publish profiles and deployment files
+*.pubxml
+*.publishproj
+function-app-notification*.pubxml
+appInsights*.arm.json
+ServiceDependencies*.json
+
+# Specific files from the screenshot
+Clinic.Notification.Service/Properties/
+Clinic.Notification.Service/PublishProfiles/
+Clinic.Notification.Service/ServiceDependencies/
